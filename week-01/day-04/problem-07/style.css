@@ -1,0 +1,21 @@
+body {
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.border-minus-top {
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-top: 0px;
+  padding: 15px;
+  width: 300px;
+}
+
+.border-minus-topbottom {
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-top: 0px;
+  border-bottom: 0px;
+  padding: 15px;
+  width: 300px;
+}

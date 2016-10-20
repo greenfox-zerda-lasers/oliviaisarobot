@@ -1,0 +1,30 @@
+p {
+  text-indent: 30px;
+}
+
+h1 {
+  color: #0000FF;
+}
+
+h2 {
+  color: #FFA720;
+}
+
+.redletter {
+  color: #E11A00;
+}
+
+.blue-square {
+  color: #0000FF;
+  list-style-type: square;
+  margin-left: 30px;
+}
+
+.black-disc {
+  color: black;
+  list-style-type: disc;
+}
+
+ol {
+  color: black;
+}
