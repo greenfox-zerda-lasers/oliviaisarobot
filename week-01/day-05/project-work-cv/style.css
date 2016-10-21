@@ -1,3 +1,101 @@
+body {
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgba(56, 56, 56, 1);
+}
+
+/*NAVIGATION*/
+
+.nav-left {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  top: 325px;
+  left: -120px;
+  background-color: rgba(56,56,56,.4);
+  color: rgba(56,56,56,.4);
+  position: fixed;
+  z-index: 5;
+  transition: .2s;
+}
+
+.nav-left:hover {
+  left: -90px;
+  background-color: rgba(56,56,56,1);
+  transition: .2s;
+}
+
+.nav-right {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  top: 325px;
+  right: -120px;
+  background-color: rgba(56,56,56,.4);
+  color: rgba(56,56,56,.4);
+  position: fixed;
+  z-index: 5;
+  transition: .2s;
+}
+
+.nav-right:hover {
+  right: -90px;
+  background-color: rgba(56,56,56,1);
+  transition: .2s;
+}
+
+/*HEADER*/
+
+.cover {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-image: url(https://raw.githubusercontent.com/greenfox-zerda-lasers/syllabus/master/week-01/5-cv/project/anakin.png);
+  background-position: absolute center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cover-name {
+  font-family: 'Abril Fatface', cursive;
+  color: rgb(34,34,34);
+  font-size: 70px;
+  margin-top: -20px;
+}
+
+header {
+  font-family: 'Abril Fatface', cursive;
+  padding-top: 230px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  color: rgb(34,34,34);
+  font-size: 35px;
+  margin-bottom: 100px;
+}
+
+/*CONTENT*/
+
+.content {
+  margin: 0 auto;
+  margin-top: -400px;
+  width: 50%;
+  min-width: 800px;
+  z-index: 10;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*FOOTER*/
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*TEXT STYLES*/
+
 article {
   font-size: 16px;
   line-height: 26px;
@@ -28,41 +126,9 @@ blockquote::after {
   left: 0;
 }
 
-body {
-  margin: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
-  color: rgba(56, 56, 56, 1);
-}
-
-.content {
-  margin: 0 auto;
-  margin-top: -400px;
-  width: 50%;
-  min-width: 800px;
-  z-index: 10;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-.cover {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  background-image: url(https://raw.githubusercontent.com/greenfox-zerda-lasers/syllabus/master/week-01/5-cv/project/anakin.png);
-  background-position: absolute center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 em {
   font-style: normal;
   font-weight: bold;
-}
-
-footer {
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 h1 {
@@ -88,17 +154,6 @@ h3 {
   margin-bottom: 24px;
 }
 
-header {
-  font-family: 'Abril Fatface', cursive;
-  padding-top: 230px;
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 100%;
-  color: rgb(34,34,34);
-  font-size: 35px;
-  margin-bottom: 100px;
-}
-
 hr {
   height: 3px;
   background-color: black;
@@ -107,73 +162,20 @@ hr {
   margin-right: 25px;
 }
 
-.name-title {
-  font-family: 'Abril Fatface', cursive;
-  color: rgb(34,34,34);
-  font-size: 70px;
-  margin-top: -20px;
-}
-
-.nav-left {
-  height: 150px;
-  width: 150px;
-  border-radius: 100px;
-  top: 325px;
-  left: -120px;
-  background-color: rgba(56,56,56,.4);
-  color: rgba(56,56,56,.4);
-  position: fixed;
-  z-index: 5;
-  transition: .2s;
-}
-
-.nav-left:hover {
-  left: -90px;
-  background-color: rgba(56,56,56,1);
-  transition: .2s;
-  line-height: 100px;
-  color: white;
-  font-size: 55px;
-  text-align: right;
-  content: "‹";
-}
-
-.nav-right {
-  height: 150px;
-  width: 150px;
-  border-radius: 100px;
-  top: 325px;
-  right: -120px;
-  background-color: rgba(56,56,56,.4);
-  color: rgba(56,56,56,.4);
-  position: fixed;
-  z-index: 5;
-  transition: .2s;
-}
-
-.nav-right:hover {
-  right: -90px;
-  background-color: rgba(56,56,56,1);
-  transition: .2s;
-  line-height: 150px;
-  color: white;
-  font-size: 55px;
-  text-align: left;
-  content: "/2190";
-}
-
 section {
   padding-left: 50px;
   padding-right: 50px;
 }
+
+ul {
+  list-style-type: square;
+}
+
+/*TEXT CLASSES*/
 
 .textblock {
   font-size: 20px;
   line-height: 32px;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-ul {
-  list-style-type: square;
 }
