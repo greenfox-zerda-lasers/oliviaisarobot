@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 700px;
+}
+
+header {
+  background: aqua;
+  height: 100px;
+}
+
+main {
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside {
+  flex-basis: 100px;
+}
+
+.leftside {
+  background: orange;
+}
+
+.rightside {
+  background: purple;
+}
+
+.center {
+  background: red;
+  flex-basis: 450px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+footer {
+  background: blue;
+  height: 100px;
+}
+
+.fixbox {
+  background: black;
+  height: 100px;
+  width: 100px;
+  margin: 25px;
+}

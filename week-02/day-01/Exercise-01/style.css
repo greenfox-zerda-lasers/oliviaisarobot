@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+section {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 300px;
+}
+
+article {
+  display: block;
+  text-align: justify;
+  border-bottom: 2px solid black;
+}
+
+article img {
+  padding: 10px;
+}
+
+article.img-flex-start img {
+  float: left;
+}
+
+article.img-flex-end img {
+  float: right;
+}

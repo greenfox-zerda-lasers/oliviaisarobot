@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 700px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+}
+
+.tile {
+  height: 180px;
+  width: 200px;
+  display: inline;
+  border: 5px solid black;
+  background: #FF6347;
+  margin: 5px;
+}
+
+.poz {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 36px;
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
