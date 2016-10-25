@@ -16,7 +16,8 @@ a {
 
 main {
   margin: 0 auto;
-  width: 600px;
+  width: 50%;
+  min-width: 380px;
   background: #dcd6cd;
   height: auto  ;
   position: relative;
@@ -26,12 +27,13 @@ main {
 
 form {
   justify-content: space-between;
-  align-items: flex-start;;
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
 }
 
 section {
+  display: inline-block;
   flex-wrap: wrap;
 }
 
@@ -41,13 +43,35 @@ section::after {
 }
 
 .pct50 {
-  width: 290px;
+  width: 48%;
+  min-width: 190px;
+  display: inline;
+  flex-wrap: wrap;
 }
 
 .pct100 {
-  width: 600px;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+/*for small screens*/
+
+@media all and (max-width:767px) {
+  .pct50 {
+    width: 100%;
+  }
+
+  .pct100 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="submit"], input[type="reset"] {
+    display: block;
+    margin-top: 20px;
+  }
 }
 
 /*form styling*/
@@ -152,6 +176,7 @@ input[type="radio"]:checked + label::before {
 
 .radio label[for="gender"] {
   display: block;
+  flex-wrap: wrap;
 }
 
 .radio label[for="male"], .radio label[for="female"] {
@@ -309,6 +334,10 @@ input[type="submit"] {
   box-shadow: inset 0px -3px #352f46;
 }
 
+input[type="submit"]:hover {
+  background: teal;
+}
+
 input[type="reset"] {
   box-sizing: border-box;
   width: 190px;
@@ -318,4 +347,10 @@ input[type="reset"] {
   text-transform: uppercase;
   background: linear-gradient(180deg, #fefefe, #e7e7e7);
   box-shadow: inset 0px -2px 2px #cecece;
+}
+
+input[type="reset"]:hover {
+  color: white;
+  background: #e74c3c;
+  box-shadow: inset 0px -2px 2px #c0392b;
 }
