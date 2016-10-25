@@ -1,0 +1,321 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4261;
+}
+
+a {
+  color: #626262;
+}
+
+/*form positioning*/
+
+main {
+  margin: 0 auto;
+  width: 600px;
+  background: #dcd6cd;
+  height: auto  ;
+  position: relative;
+  top: 20px;
+  padding: 30px 80px 30px 80px;
+}
+
+form {
+  justify-content: space-between;
+  align-items: flex-start;;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  flex-wrap: wrap;
+}
+
+section::after {
+  content: "";
+  clear: both;
+}
+
+.pct50 {
+  width: 290px;
+}
+
+.pct100 {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*form styling*/
+
+h1 {
+  font-weight: normal;
+  font-size: 24px;
+  width: 100%;
+}
+
+section h1 {
+  box-sizing: border-box;
+  color: white;
+  font-style: normal;
+  background: #938c97;
+  text-indent: 15px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #938c97;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: inset 0 2px 2px #dcd6cd;
+}
+
+textarea {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #938c97;
+  border-radius: 3px;
+  height: 200px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: inset 0 2px 2px #dcd6cd;
+}
+
+/*require*/
+
+label[for="name"]::after, label[for="tel"]::after, label[for="email"]::after, label[for="intro"]::after {
+  content: " *";
+  color: red;
+}
+
+/*birth and gender*/
+
+.number, .radio {
+  float: left;
+  width: 50%;
+  align-items: center;
+  align-content: center;
+}
+
+.number::after, .radio::after {
+  content: "";
+  clear: both;
+}
+
+input[type="number"] {
+  display: block;
+  width: 90px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: " ";
+  left: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #938c97;
+  border-radius: 9px;
+  box-shadow: inset 0 2px 2px #dcd6cd;
+  background: #ffffff;
+}
+
+input[type="radio"]:checked + label::before {
+  box-sizing: border-box;
+  content: "";
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4261;
+  background: radial-gradient(circle, #938c97 30%, #ffffff 40%);
+}
+
+.radio label[for="gender"] {
+  display: block;
+}
+
+.radio label[for="male"], .radio label[for="female"] {
+  display: inline;
+  position: relative;
+  margin-left: 30px;
+  top: 10px;
+  font-weight: normal;
+}
+
+.radio label[for="male"]::before, .radio label[for="female"]::before {
+  position: absolute;
+  left: -25px;
+}
+
+/*checkbox*/
+
+.checkbox {
+  display: inline-block;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.checkbox label {
+  display: block;
+  font-weight: normal;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-left: 40px;
+}
+
+.checkbox strong {
+  display: block;
+  align-self: flex-start;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label::before {
+  box-sizing: border-box;
+  content: " ";
+  position: absolute;
+  left: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #938c97;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 2px #dcd6cd;
+  background: #ffffff;
+}
+
+input[type="checkbox"]:checked + label::before {
+  box-sizing: border-box;
+  content: "";
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4261;
+  background: radial-gradient(circle, #938c97 30%, #ffffff 40%);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+.column::after {
+  content: "";
+  clear: both;
+}
+
+p {
+  float: left;
+  opacity: .5;
+  font-size: 14px;
+}
+
+p::after {
+  content: "";
+  clear: both;
+}
+
+/*intro*/
+
+.textbox, .upload {
+  display: block;
+  width: 100%;
+}
+
+/*agreement*/
+
+.agree {
+  position: relative;
+  width: 100%;
+  margin: 10px 0 20px 0px;
+}
+
+.agree label {
+  width: 80%;
+  margin-left: 40px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/*image upload*/
+
+input[type="file"] {
+  display: none;
+}
+
+label[for="upimg"] {
+  display: block;
+  box-sizing: border-box;
+  width: 230px;
+  color: #4c4464;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid #938c97;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fefefe, #e7e7e7);
+  box-shadow: inset 0px -2px 2px #cecece;
+}
+
+/*submit & reset button*/
+
+.button {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.reset {
+  text-align: right;
+}
+
+input[type="submit"] {
+  box-sizing: border-box;
+  display: inline;
+  width: 230px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #4c4464, #433c58);
+  box-shadow: inset 0px -3px #352f46;
+}
+
+input[type="reset"] {
+  box-sizing: border-box;
+  width: 190px;
+  height: 50px;
+  color: #4c4464;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #fefefe, #e7e7e7);
+  box-shadow: inset 0px -2px 2px #cecece;
+}
