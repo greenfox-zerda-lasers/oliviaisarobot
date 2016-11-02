@@ -1,7 +1,25 @@
-Check out my page on GitHub: [My GitHub website](https://oliviaisarobot.github.io/)
+**Check out my page on GitHub: [My GitHub website](https://oliviaisarobot.github.io/)**
 
 This is going to be a fancy collection of useful links:
 
-[Command Line Basics](https://www.codecademy.com/articles/command-line-commands)
+[Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-[Git Remote Basics](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+[Character Codes](http://www.character-code.com/)
+
+Colors:
+
+[HTML Color Codes](http://htmlcolorcodes.com/)
+
+[HSL Color Picker](http://hslpicker.com/)
+
+[Adobe Color CC](https://color.adobe.com/create/color-wheel/)
+
+[UI Gradients](http://uigradients.com/#Almost)
+
+[Flat UI Colors](https://flatuicolors.com/)
+
+HTML:
+
+[Complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+[Specificity calculator](https://specificity.keegan.st/)
