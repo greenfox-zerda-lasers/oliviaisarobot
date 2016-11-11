@@ -4,16 +4,16 @@ from math import *
 base = Tk()
 
 size = 600
-canvas = Canvas(base, width=size, height=size, bg="white")
+canvas = Canvas(base, width=size, height=size, bg="teal")
 canvas.pack()
 
 def draw_hexagon(side, x, y):
-    p1p2 = canvas.create_line(x-side/2, y-cos(30*180/pi)*side, x+side/2, y-cos(30*180/pi)*side)
-    p2p3 = canvas.create_line(x+side/2, y-cos(30*180/pi)*side, x+side, y)
-    p3p4 = canvas.create_line(x+side, y, x+side/2, y+cos(30*180/pi)*side)
-    p4p5 = canvas.create_line(x+side/2, y+cos(30*180/pi)*side, x-side/2, y+cos(30*180/pi)*side)
-    p4p6 = canvas.create_line(x-side/2, y+cos(30*180/pi)*side, x-side, y)
-    p6p1 = canvas.create_line(x-side, y, x-side/2, y-cos(30*180/pi)*side)
+    p1p2 = canvas.create_line(x-side/2, y-cos(30*180/pi)*side, x+side/2, y-cos(30*180/pi)*side, fill="white", width=2)
+    p2p3 = canvas.create_line(x+side/2, y-cos(30*180/pi)*side, x+side, y, fill="white", width=2)
+    p3p4 = canvas.create_line(x+side, y, x+side/2, y+cos(30*180/pi)*side, fill="white", width=2)
+    p4p5 = canvas.create_line(x+side/2, y+cos(30*180/pi)*side, x-side/2, y+cos(30*180/pi)*side, fill="white", width=2)
+    p4p6 = canvas.create_line(x-side/2, y+cos(30*180/pi)*side, x-side, y, fill="white", width=2)
+    p6p1 = canvas.create_line(x-side, y, x-side/2, y-cos(30*180/pi)*side, fill="white", width=2)
 
 def hexa(x, y, scale, n):
     if n <= 0:

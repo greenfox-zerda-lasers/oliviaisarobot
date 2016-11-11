@@ -7,22 +7,21 @@
 
 from tkinter import *
 from random import randint
-from colour import rgb2hex
-
+from webcolors import rgb_to_hex
 base = Tk()
 
-canvas = Canvas(base, width=300, height=300, bg="black")
+canvas = Canvas(base, width=700, height=700, bg="black")
 canvas.pack()
 
 def random_stars(num):
     for a in range(num):
-        c = randint(1, 9)
-        color = "#" + str(c) + str(c) + str(c)
-        x = randint(0, 300)
-        y = randint(0, 300)
+        c = randint(0, 55)
+        color = rgb_to_hex([c, c, c])
+        x = randint(0, 700)
+        y = randint(0, 700)
         canvas.create_rectangle(x, y, x+2, y+2, fill=color)
 
-random_stars(500)
+random_stars(3000)
 
 base.mainloop()
 
