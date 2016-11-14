@@ -20,12 +20,7 @@ class Cows_and_bulls():
     def __init__(self):
         self.counter = 0
         self.state = "playing"
-
-        self.num0 = randint(1,9)
-        self.num1 = randint(0,9)
-        self.num2 = randint(0,9)
-        self.num3 = randint(0,9)
-        self.number = (self.num0, self.num1, self.num2, self.num3)
+        self.number = (randint(1,9), randint(0,9), randint(0,9), randint(0,9))
 
         print("Hello, what's your name?")
         player_name = input()
@@ -69,6 +64,16 @@ class Cows_and_bulls():
 
         if output == ["cow", "cow", "cow", "cow"]:
             print("Congratulations " + str(self.player_name) +"! You guessed the right number with only " + str(self.counter) + " guesses!")
+            return self.replay()
+
+    def replay(self):
+        print("Would you like to play again? Y/N")
+        player_replay = input()
+
+        if player_replay == "Y" or player_replay == "y" or player_replay == "yes" or player_replay == "YES":
+            self.play()
+        else:
+            quit()
 
 newgame = Cows_and_bulls()
 newgame.play()
