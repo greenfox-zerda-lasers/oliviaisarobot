@@ -21,6 +21,9 @@ class Adventure_game():
     def intro(self):
         print(outputs.greet)
         player_name = input()
+        if player_name == "":
+            print("Please enter a name!")
+            player_name = input()
         self.player_name = player_name
         print(outputs.intro.format(self.player_name, self.player_name))
         print(outputs.rules)
