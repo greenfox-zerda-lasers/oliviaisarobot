@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right, #9c9c9c 0%, #eee 30%, #eee 70%,#9c9c9c 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif, Arial, Helvetica;
+  color: white;
+  font-size: 11px;
+  line-height: 12px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #888;
+}
+
+.slider {
+  display: flex;
+  align-items: center;;
+  width: 90vw;
+  max-width: 900px;
+  height: 50vh;
+  background: linear-gradient(to bottom, #fff 0%, #d0d0d0 100%);
+  box-shadow: 3px 3px 3px #959595;
+}
+
+.nav {
+  width: 50px;
+  text-align: center;
+  opacity: .5;
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+}
+
+.nav:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+}
+
+.right img {
+  transform: rotate(180deg);
+}
+
+.photo-display {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/01.jpg);
+  background-size: cover;
+  position: relative;
+  transition: background-image ease 1s;
+  -webkit-transition: background-image ease 1s;
+  -moz-transition: background-image ease 1s;
+}
+
+.description {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  transition: ease 1s;
+  -webkit-transition: ease 1s;
+  -moz-transition: ease 1s;
+}
+
+.description h1 {
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: ease 1s;
+  -webkit-transition: ease 1s;
+  -moz-transition: ease 1s;
+}
+
+.description small {
+  display: inline;
+  margin-left: 10px;
+  transition: ease 1s;
+  -webkit-transition: ease 1s;
+  -moz-transition: ease 1s;
+}
+
+.description p {
+  margin-top: 0px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail {
+  margin-top: 3vh;
+  margin-left: 2vh;
+  width: 8vh;
+  height: 8vh;
+  outline: #eee solid 2px;
+  background: #888;
+  overflow: hidden;
+  opacity: .5;
+  box-shadow: 3px 3px 3px #959595;
+  transition: ease .5s;
+  -webkit-transition: ease .5s;
+  -moz-transition: ease .5s;
+}
+
+.thumbnail img {
+  height: 8vh;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: ease .5s;
+  -webkit-transition: ease .5s;
+  -moz-transition: ease .5s;
+}
+
+.selected {
+  opacity: 1;
+  margin-top: 2vh;
+}
