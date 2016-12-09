@@ -72,7 +72,7 @@ var allThumbnails = function() {
     }
     newImg.setAttribute('src', 'images/0' + (i + 1) + '.jpg');
     newImg.setAttribute('alt', imageGallery[i].title);
-    newImg.dataset.key = i;
+    newThumb.dataset.key = i;
     newThumb.appendChild(newImg);
     imgGallery.appendChild(newThumb);
   }
@@ -127,4 +127,6 @@ function navigate() {
 rightButton.addEventListener('click', nextImage);
 leftButton.addEventListener('click', previousImage);
 
-imgThumbnails.addEventListener('click', navigate);
+imgThumbnails.forEach( function(e) {
+  e.addEventListener('click', navigate);
+})
