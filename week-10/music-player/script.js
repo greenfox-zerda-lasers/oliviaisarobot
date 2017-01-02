@@ -53,6 +53,16 @@ allTracks.forEach( function(e) {
   e.addEventListener('click', selectTrack);
 })
 
+function pauseAndPlay(e) {
+  e = window.event;
+
+  if (e.keyCode === '19') {
+
+  }
+}
+
+window.addEventListener('keypress', pauseAndPlay);
+
 var listCurrent = function() {
   currentTitle.innerHTML = audioCollection[current].title;
   currentArtist.innerHTML = audioCollection[current].artist;
