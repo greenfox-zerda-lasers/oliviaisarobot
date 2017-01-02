@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Music player</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="player">
+      <div id="music">
+        <div class="column">
+          <div class="logo"></div>
+
+          <div id="artwork"></div>
+
+          <div id="playlists">
+            <h1>Playlists</h1>
+            <div id="new-playlist"></div>
+            <ul id="allplaylists">
+              <li class="active">All tracks</li>
+              <li>Favorites</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column">
+          <div id="current">
+            <h1 id="title"></h1>
+            <h2 id="artist"></h2>
+          </div>
+          <div id="tracklist">
+            <ol class="tracklist">
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div id="control-panel">
+        <audio id="now-playing" src="" controls></audio>
+      </div>
+    </div>
+
+    <script src="audiodb.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
