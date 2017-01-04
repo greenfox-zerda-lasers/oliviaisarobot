@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Music player</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="player">
+      <div id="music">
+        <div class="column">
+          <div class="logo"></div>
+
+          <div id="artwork"></div>
+
+          <div id="playlists">
+            <h1 id="header">Playlists</h1>
+            <div id="new-playlist"></div>
+            <!-- <form id="submit-playlist" class="hide" action="" method="post">
+              <input id="new-name" type="text" name="create-playlist" placeholder="New Playlist" />
+              <input id="submit" type="submit" value="" />
+            </form> -->
+            <ul id="allplaylists">
+              <li class="active">All tracks</li>
+              <li>Favorites</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column">
+          <div id="current">
+            <h1 id="title"></h1>
+            <h2 id="artist"></h2>
+            <div id="track-to-playlist"></div>
+            <div id="track-to-favorite"></div>
+          </div>
+          <div id="tracklist">
+            <!-- <input type="range" min="0" max="100" step="1" data-buffer="60" /> -->
+            <ol class="tracklist">
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div id="control-panel">
+        <audio id="now-playing" src=""></audio>
+        <span id="audio-rewind"><img src="../images/rewind.svg" /></span>
+        <span id="audio-play" class="paused">&#9656;</span>
+        <span id="audio-forward"><img src="../images/forward.svg" /></span>
+        <span id="audio-timer" class="timer">0:00</span>
+
+        <input type="range" min="10" max="1000" step="10" value="500" data-rangeslider="" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;">
+        <span id="audio-slider" class="rangeSlider">
+          <div class="rangeSlider__handle"></div>
+          <div class="rangeSlider__fill"></div>
+          <!-- <div class="rangeSlider__buffer"></div> -->
+        </span>
+
+
+        <span id="audio-length" class="timer">0:00</span>
+        <span id="audio-mute"><img src="../images/volume.svg" /></span>
+
+        <input type="range" min="10" max="1000" step="10" value="500" data-rangeslider="" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;">
+        <span id="audio-volume" class="rangeSlider volume">
+          <div class="rangeSlider__handle"></div>
+          <div class="rangeSlider__fill"></div>
+        </span>
+
+      </div>
+    </div>
+
+    <!-- <script src="audiodb.js"></script> -->
+    <script src="tracks.js"></script>
+    <script src="playlists.json"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
