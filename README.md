@@ -16,8 +16,12 @@ Python:
 JavaScript:
 
 * [Image gallery](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-07/project-image-gallery)
-* [Todo app](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-08/todo-app)
-* [Music player](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-10/music-player)
+* [Todo app (full stack)](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-08/todo-app)
+* [Music player (full stack)](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-10/music-player)
+
+Group project:
+
+* [Actinolite / Green Fox Exam Machine]()
 
 ---
 
