@@ -9,20 +9,21 @@
   </head>
   <body>
 
-    <form>
-      <h1 class="heading">Todos</h1>
+    <article>
+      <h1>Todos</h1>
 
       <div class="add-item">
-        <input class="new-item" type="text" name="todo-name" placeholder="name of the new todo" />
-        <input class="button-text" type="submit" name="add" value="Add" />
+        <input id="new-item" type="text" name="todo-name" placeholder="name of the new todo" />
+        <button id="add-button" type="submit" name="add">Add</button>
       </div>
 
-      <ul class="todo-list">
-
-      </ul>
-    </form>
+      <section id="todo-list"></section>
+    </article>
 
     <script src='todo.js'></script>
+    <script>
+      Todo.init();
+    </script>
 
   </body>
 </html>

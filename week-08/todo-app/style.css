@@ -8,14 +8,14 @@ body {
   height: 100vh;
 }
 
-form {
+article {
   width: 400px;
   background-color: #f7f7f7;
   color: #c2c2c2;
   box-shadow: 2px 2px 2px #7c7c7c;
 }
 
-.heading {
+h1 {
   font-size: 36px;
   margin-top: 36px;
   margin-bottom: 36px;
@@ -26,11 +26,12 @@ form {
 
 .add-item {
   display: flex;
+  width: 100%;
   justify-content: center;
   margin-bottom: 36px;
 }
 
-.new-item {
+#new-item {
   box-sizing: border-box;
   margin: 0;
   padding: 5px;
@@ -40,7 +41,7 @@ form {
   border: 1px solid #c2c2c2;
 }
 
-.button-text {
+#add-button {
   box-sizing: border-box;
   margin: 0;
   height: 30px;
@@ -53,9 +54,58 @@ form {
   cursor: pointer;
 }
 
+#todo-list {
+  margin-bottom: 40px;
+}
+
 .todo-item {
+  margin-left: 50px;
+  margin-right: 50px;
+  align-self: stretch;
   font-weight: 400;
   font-size: 16px;
   line-height: 2.2;
   color: #cecece;
+  position: relative;
+}
+
+.del-button {
+  position: absolute;
+  right: 30px;
+  align-self: flex-end;
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+  background-image: url("images/bin.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .3;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+}
+
+.check {
+  position: absolute;
+  right: 0;
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+  background-image: url("images/circle.svg");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .3;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+}
+
+.del-button:hover, .check:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
 }
