@@ -1,6 +1,25 @@
 # School projects / oliviaisarobot
 
-**My page on GitHub: [My GitHub website](https://oliviaisarobot.github.io/)**
+Interesting projects:
+
+HTML/CSS:
+
+* [My GitHub website](https://oliviaisarobot.github.io/)
+* [Wikipedia page](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-02/Wikipedia-page)
+
+Python:
+
+* [Elevator MVC](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-05/day-04/elevator)
+* [Todo app](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-05/Project-TODO-app)
+* [Tkwanderer](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-06)
+
+JavaScript:
+
+* [Image gallery](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-07/project-image-gallery)
+* [Todo app](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-08/todo-app)
+* [Music player](https://github.com/greenfox-zerda-lasers/oliviaisarobot/tree/master/week-10/music-player)
+
+---
 
 This is going to be a fancy collection of useful links:
 
