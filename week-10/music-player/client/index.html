@@ -2,14 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Music player</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>FoxPlayer</title>
+
+    <link rel="icon" href="images/fixedfox.png">
+
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/rangeslider.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   </head>
   <body>
 
-    <div id="player">
+    <section id="player">
       <div id="music">
         <div class="column">
           <div class="logo"></div>
@@ -18,15 +22,20 @@
 
           <div id="playlists">
             <h1 id="header">Playlists</h1>
-            <div id="new-playlist"></div>
-            <!-- <form id="submit-playlist" class="hide" action="" method="post">
-              <input id="new-name" type="text" name="create-playlist" placeholder="New Playlist" />
-              <input id="submit" type="submit" value="" />
-            </form> -->
-            <ul id="allplaylists">
-              <li class="active">All tracks</li>
-              <li>Favorites</li>
-            </ul>
+            <div id="new-playlist" class="hide">
+              <form>
+                <p><label for="playlist-name">Create a new playlist:</label></p>
+                <input id="name-playlist" type="text" placeholder="New Playlist" />
+                <button id="cancel" type="reset">Cancel</button>
+                <button id="submit" type="submit">Submit</button>
+              </form>
+            </div>
+            <div id="create-playlist-button">&#x271a;</div>
+            <article id="allplaylists">
+              <ul></ul>
+              <!-- <li class="active">All tracks</li>
+              <li>Favorites</li> -->
+            </article>
           </div>
         </div>
 
@@ -34,8 +43,8 @@
           <div id="current">
             <h1 id="title"></h1>
             <h2 id="artist"></h2>
-            <div id="track-to-playlist"></div>
-            <div id="track-to-favorite"></div>
+            <div id="track-to-playlist">&#x271a;</div>
+            <div id="track-to-favorite">&#x2764;</div>
           </div>
           <div id="tracklist">
             <!-- <input type="range" min="0" max="100" step="1" data-buffer="60" /> -->
@@ -45,14 +54,14 @@
         </div>
       </div>
 
-      <div id="control-panel">
+      <article id="control-panel">
         <audio id="now-playing" src=""></audio>
-        <span id="audio-rewind"><img src="../images/rewind.svg" /></span>
+        <span id="audio-rewind">&#x2770;&#x2770;</span>
         <span id="audio-play" class="paused">&#9656;</span>
-        <span id="audio-forward"><img src="../images/forward.svg" /></span>
+        <span id="audio-forward">&#x2771;&#x2771;</span>
         <span id="audio-timer" class="timer">0:00</span>
 
-        <input type="range" min="10" max="1000" step="10" value="500" data-rangeslider="" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;">
+        <input class="progress" type="range" min="10" max="1000" step="10" value="500" data-rangeslider="" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;">
         <span id="audio-slider" class="rangeSlider">
           <div class="rangeSlider__handle"></div>
           <div class="rangeSlider__fill"></div>
@@ -61,21 +70,30 @@
 
 
         <span id="audio-length" class="timer">0:00</span>
-        <span id="audio-mute"><img src="../images/volume.svg" /></span>
+        <span id="audio-mute"></span>
 
-        <input type="range" min="10" max="1000" step="10" value="500" data-rangeslider="" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;">
+        <input class="volume" type="range" min="10" max="1000" step="10" value="500" data-rangeslider="" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;">
         <span id="audio-volume" class="rangeSlider volume">
           <div class="rangeSlider__handle"></div>
           <div class="rangeSlider__fill"></div>
         </span>
 
-      </div>
-    </div>
+      </article>
+    </section>
 
-    <!-- <script src="audiodb.js"></script> -->
-    <script src="tracks.js"></script>
-    <script src="playlists.json"></script>
-    <script src="script.js"></script>
+    <!-- <script src="data/tracks.js"></script> -->
+    <!-- <script src="data/playlists.js"></script> -->
+    <script src="scripts/ajax.js"></script>
+    <!-- <script src="scripts/audio.js"></script> -->
+    <script src="scripts/tracks.js"></script>
+    <script src="scripts/playlists.js"></script>
+    <!-- <script src="scripts/controlpanel.js"></script> -->
+    <!-- <script src="scripts/index.js"></script> -->
+
+    <script>
+      Playlists.init();
+      Tracks.init();
+    </script>
 
   </body>
 </html>
