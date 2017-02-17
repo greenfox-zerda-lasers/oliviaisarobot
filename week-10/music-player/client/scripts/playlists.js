@@ -1,16 +1,3 @@
-/**
- * Playlists module
- * by Tibor
- * Methods
- *  - init OK
- *  - render OK
- *  - create OK
- *  - delete
- *  - activate
- * Loads
- *  - AJAX module
- */
-
 var Playlists = (function () {
 	var root = document.querySelector('#allplaylists');
 	var listNode = root.querySelector('ul');
